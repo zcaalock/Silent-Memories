@@ -1,0 +1,96 @@
+.,Polish
+ATTACK,Atak
+CANCEL,Anuluj
+CONTINUE,Kontynuuj
+EXPLORE,{action} Eksploruj
+INSPECT,{action} Zbadaj
+NEVERMIND,"<i>""Nieważne""</i>"
+OPEN,{action} Otwórz
+PICKUP,{action} Podnieś
+SEARCH,{action} Przeszukaj
+TALK,{action} Porozmawiaj
+quest.name,Silent Memories
+quest.description,<i>Rozwiąż zagadkę zaginięcia Johna, syna twojej dobrej przyjaciółki i zbadaj tajemnice starego kościoła baptystów z przełomu wieków</i>\n\nScenariusz jest przeznaczony dla 2-5 osób, wymaga kafelków z pierwszej edycji Posiadłości Szaleństwa. W tym scenariuszu w większości przypadków zrezygnowano z opisu tego jak należy ustawiać znaczniki, jest to celowy zabieg zachęcający graczy do uważnego śledzenia zmian w aplikacji jak również element mechaniki. Jeśli jakiś znacznik zostanie zauważony po czasie należy go umieścić na planszy i traktować jako dopiero co odkryty.\n\n<b>Uwaga: jeśli w trakcie rozgrywki pojawi polecenie usunięcia wszystkich kafelek z planszy, Faza Badaczy zaczyna się od nowa.</b>\n\nScenariusz posiada kilka zakończeń.\n\nWszelkie uwagi można kierować pod adresem:\nhttps://github.com/zcaalock/SotC/issues\n\nScenariusz jest stworzony przy użyciu:\nhttps://github.com/NPBruce/valkyrie\n\n\n
+quest.authors,zcaalock\nchrismaliszewski
+quest.synopsys,Rozwiąż zagadkę zaginięcia Johna, syna twojej przyjaciółki.
+UIContinue.button1,Przycisk1
+UI_text.uitext,Jest 1 października 1920 roku.\n\nTwoja znajoma zaprosiła cię na spotkanie w pobliskim kościele baptystów. Przez telefon wspomniała, że to ważne. W jej głosie wyczułeś niepokój. Prawdopodobnie chodzi o zaginięcie jej syna Johna. Niedawno pisały o tym gazety. Wygląda na to, że jeszcze się nie odnalazł...\n\nPo krótkiej podróży ze swojego biura docierasz w okolice pobliskiej góry. Słyszałeś, że kiedyś w okolicy wydobywano miedź. Przyjaciółka chciała spotkać się z tobą w pobliskim małym drewnianym kościele znajdującym się u jej podnóża.\n\nKościół ma swoje lata świetności już za sobą. Kilkanaście lat temu część kościoła spłonęła w pożarze. Został on odbudowany i choć widać, że zadbano o odtworzenie drobnych detali w postaci prostych kształtów z wąskimi wysokimi oknami, to jednak nie odzyskał on swojego dawnego blasku.\n\n Po okolicach krążą różne dziwne legendy krążą o tym miejscu. Podobno jest nawiedzone odkąd podczas jednego z kazań kontrowersyjnego pastora wybuchł pożar. Wielu miejscowych zginęło, ale samego pastora nigdy nie odnaleziono; ani żywego, ani martwego.
+Event_Start_game_no_clue.text,Badacze zaczynają bez wskazówek {clue} i bez dodatkowych przedmiotów (nie licząc przedmiotów przypisanych do postaci)
+Event_Start_game_no_clue.button1,{qst:CONTINUE}
+Event_start_game_add_first_tile.text,Wchodzisz do kościoła. Jest dość stary i zniszczony. Widać ślady dawnego pożaru, który miał tu miejsce. W środku panuje półmrok roświetlany słabym blaskiem świec ustawionych na ołtarzu i kontuarach. W powietrzu czuć zapach zbutwiałego drewna i kurzu.\n\n (Umieść: {c:Tile_01_church} na planszy)
+Event_start_game_add_first_tile.button1,{qst:CONTINUE}
+Event_church_person_julie.button1,{qst:CONTINUE}
+Event_church_spawn_search_info_label.text,Na ołtarzu znajduje się tabliczka z napisem, którego z tej odległości nie jesteś w stanie odczytać.
+Token_person_julie_mayer.text,Twoja znajoma. Julie Mayer. Szepta cichą modlitwę mając zamknięte oczy.
+Token_person_julie_mayer.button1,{qst:TALK}
+Event_church_person_julie.text,W pierwszej ławce siedzi twoja przyjaciółka. Wygląda na bardzo smutną. Modli się. Na jej skroni widzisz pasmo siwych włosów. Uderza cię zmęczenie malujące się na jej twarzy, tak różne od jej tryskającego humorem i energią uśmiechu jaki pamietasz z czasów kiedy razem pracowaliście.
+Event_church_spawn_search_info_label.button1,{qst:CONTINUE}
+Token_church_search_info_label.text,Miedziana tabliczka na ołtarzu.
+Token_church_search_info_label.button1,{qst:SEARCH}
+Event_church_search_text_info_label.text,Ku pamięci ofiar pożaru, który tu wybuchł w 12 grudnia 1901r. \n\n (Otrzymujesz 1 {clue} Wskazówkę)
+Event_church_search_text_info_label.button1,Kontynuuj
+Event_church_spawn_bookshelf.text,Z tyłu kościoła jest stara, ładnie zdobiona, drewniana półka z zakurzonymi książkami.
+Event_church_spawn_bookshelf.button1,{qst:CONTINUE}
+Token_church_search_bookshelf.text,Półka ze starymi zakurzonymi książkami.
+Token_church_search_bookshelf.button1,{qst:SEARCH}
+Event_church_search_text_bookshelf.text,Jesteś lekko zdziwiony, że to nie egzemplarze Biblii lub innych religijnych książek. Przebiegasz wzrokiem po grzbietach i widzisz, że każda księga jest podpisana: Dziennik prac. Kopalnia miedzi. Daty są od 1800 do 1900 roku. Brakuje dziennika z 1850-1855. W środku są tabele z nazwiskami, datami i ilością wydobytego urobku.\n\n(Otrzymujesz 1 {clue})
+Event_church_search_text_bookshelf.button1,Kontynuuj
+Token_church_bookshelf_interaction.text,Postanawiasz jeszcze raz rzucić okiem na póki. Masz przeczucie, że coś z nimi jest nie tak...
+Token_church_bookshelf_interaction.button1,{qst:SEARCH}
+Event_church_bookshelf_interaction_test.text,Wyciągasz książki na chybił trafił mając nadzieję, że znajdziesz coś interesującego. \n\nTest wiedzy {lore}.
+Event_church_bookshelf_interaction_test.button1,Sukces
+Event_church_bookshelf_interaction_test.button2,Porażka
+Event_church_bookshelf_interaction_test.button3,{qst:CANCEL}
+Event_church_bookshelf_interaction_success.text,Próbujesz wyciągnąć kolejną książkę, pociągasz ją w dół, słyszysz ciche kliknięcie i czujesz, że półka lekko się poruszyła. Po dokładniejszym zbadaniu dostrzegasz prowadnice na podłodze, które umożliwiają łatwe przesunięcie półki na bok. Ze zdziwieniem obserwujesz, jak półka się przesuwa, a twoim oczom ukazują się ładnie zdobione drzwi z miedzianymi okuciami.
+Event_church_bookshelf_interaction_success.button1,Kontynuuj
+Token_church_bookshelf_interaction_moved.text,Półka z dziennikami urobku. Nie ma tu nic więcj, sterta zakurzonych książek.
+Token_church_bookshelf_interaction_moved.button1,Kontynuuj
+Token_church_explore_corridor.text,Duże, ładnie zdobione drzwi.
+Token_church_explore_corridor.button1,{qst:EXPLORE}
+Event_church_spawn_investigators.text,Po szybkim rzucie oka po wnętrzu kościoła zastanawiasz się co dalej. \n\n<i>Umieść badaczy na we wskazanym miejscu.</i>
+Event_church_spawn_investigators.button1,{qst:CONTINUE}
+Event_church_talk_julie.text,<i>Cieszę się, że zdecydowałeś się mi pomóc. Jak zapewne wiesz, mój syn zaginął kilka dni temu. Policja jest bezradna, nie udało im się znaleźć żadnego tropu.\n Dowiedziałam się, że w pobliskim lesie znaleziono ciało jakiegoś chłopca. Na szczęście to nie był mój syn. Policja nie łączy tych dwóch spraw, ale zaczynam mieć bardzo złe przeczucia.\nProszę idź tam. Może znajdziesz jakiś trop. Po drodze przeczytaj raport biegłego. Udało mi się zdobyć kopię od lekarza, który badał zwłoki tego biednego chłopca.\nPowodzenia...</i>\n\nJulie patrzy chwilę na ciebię smuntym badawczym wzrokiem po czym wychodzi.\n\n (Wszyscy Badacze otrzymują 1 {clue})
+Event_church_talk_julie.button1,Kontynuuj
+Event_inventory_coroner_raport.text,Z raportu koronera wynika, że chłopiec zmarł na skutek wykrwaienia z rany na szyi zrobionej ostrym narzędziem. Oprócz tego, na ciele znaleziono siniaki w okolicach nadgarstków i kostek. Czas zgonu to ok 48h od znalezienia ciała. Chłopiec był ubrany w staroświecki strój, który przypomina te z czasów końca XIX wieku. Wiek chłopca to ok. 10 lat. Tożsamość martwego chłopca nie została potwierdzona.
+Event_inventory_coroner_raport.button1,Kontynuuj
+Event_churchCorridor_tile_spawn_corridor.button1,Kontynuuj
+Token_churchCorridor_search_doors.text,Stare masywne drzwi.
+Event_churchCorridor_tile_spawn_corridor.text,Widzisz stare schody prowadzące w dół. Pokryte są czerwonym brudnym dywanem. Na końcu korytarza mienią się w słabym świetle stare masywne drzwi.\n\n (Umieść {c:Tile_02_churchCorridor} na planszy})
+Token_churchCorridor_search_doors.button1,{qst:EXPLORE}
+Event_churchCorridor_search_door_text.button1,Kontynuuj
+Token_chrchCorridor_search_jighsaw.text,Hm.. coś leży na podłodze, musiałeś to przeoczyć kiedy tędy przechodziłeś.
+Event_churchCorridor_search_door_text.text,Drzwi drewniane, solidnie zrobione, spięte grubymi metalowymi pasami. Zamek w drzwiach jest duży i staroświecki.\nNaciskasz na klamkę, ale drzwi są zamknięte. Próbujesz zobaczyć coś przez dziurę od klucza, ale jest tam tylko ciemność, zapach stęchlizny i zbutwiałego drewna.\n\n(Otrzymujesz 1 Wskazówkę {clue})
+Token_chrchCorridor_search_jighsaw.button1,{qst:PICKUP}
+Event_chrchCorridor_search_jighsaw_text.button1,{qst:CONTINUE}
+Event_chrchCorridor_search_jighsaw_text.text,Podnosisz kawałek kartki wyrwany z większej całości. Jest złożona kilka razy, papier wydaje się stary. Chwilę bijesz się z myślami i w końcu wkładasz kartkę do kieszeni.
+Event_inventory_examine_paper.button1,Kontynuuj
+UI_jigsaw_red.button1,Przycisk1
+Event_church_bookshelf_interaction_fail.button1,{qst:CONTINUE}
+Token_church_door_out.text,Wyjście.
+Event_church_bookshelf_interaction_fail.text,Po krótkiej chwili, stwierdzasz że nie ma tu nic interesującego. Same tabelki i liczby.
+Token_church_door_out.button1,{action} Idź na miejsce zbrodni
+Event_meadow_clear_board.button1,{qst:CONTINUE}
+Event_meadow_tile_show.text,Parkujesz samochód przed małym lasem niedaleko kościoła. Po przejściu kilkuset metrów wąską scieżką ukazuje się twoim oczom mała polana. Ziemia jest tu grząska po niedawnej ulewie. Wokół drzew rozwinięta jest lina na której zawieszono kartki z logo policji. To tu znaleziono ciało chłopca.\n\n (Umieść: {c:Tile_meadow} na planszy)
+Event_meadow_clear_board.text,Opuszczasz kościół i udajesz się na miejsce, gdzie znaleziono ciało chłopca. Jest niedaleko, w pobliskim lesie.\n\n(Usuń wszystkie kafelki z planszy)
+Event_meadow_tile_show.button1,{qst:CONTINUE}
+Event_meadow_spawn_investigator.text,Umieść Badaczy na planszy.
+Event_meadow_spawn_investigator.button1,Kontynuuj
+Token_meadow_investigator.button1,{qst:CONTINUE}
+Event_meadow_search_body_text.text,Rozchylasz gałęzie i kucasz przy przydeptanym kawałku ziemi gdzie na trawie widać ślady krwi. Widziałeś już w życiu nie jedno ale myśl o tym, że to krew małego chłopca przyprawia cię o dreszcze. Musisz dorwać drania, który to zrobił. Z wyrazem determinacji przystępujesz do badania miejsca zbrodni. (Test: {observation})
+Event_meadow_spawn_search_body.text,"Rozwieszona lina ogradza miejsce, gdzie znaleziono zwłoki chłopca. Oprócz zawieszek z logo policji dostrzegasz napis: <i>""Miejsce zbrodni""</i>. "
+Event_meadow_spawn_search_body.button1,Kontynuuj
+Token_meadow_search_body.button1,{qst:SEARCH}
+Token_meadow_search_body.text,W tym miejscu odnaleziono zwłoki chłopca. Śledczy chyba już skończyli czynności. Może coś przeoczyli.
+Event_meadow_search_body_text.button1,Sukces
+Event_meadow_search_body_text.button2,Porażka
+Event_meadow_search_body_text_success.text,Po kilku dłuższych chwilach rzuca ci się w oczy mieniący się kształt. Rozchylasz gałęzie niedaleko miejsca gdzie zacząłeś poszukiwania i znajdujesz złoty przedmiot.\n\nOtrzymujesz 1 {clue} Wskazówkę.
+Event_meadow_search_body_text_success.button1,Kontynuuj
+Event_item_watch.text,"To bardzo starannie zrobiony zegarek. Błyszczący metal jest dokładnie wypolerowany. Z przodu wygrawerowane jest dziwne stworzenie, wygląda jak ośmiornica. Z tyłu znajduje się grawer z napisem: <i>""dla Evana 1881""</i>. \nCałkiem nieźle się trzyma jak na 40 letni zegarek! \nNa kopercie jest zamontowany ruchomy bezel, który pokryty jest dziwnymi symbolami. Niestety w żaden sposób nie udaje ci się otworzyć zegarka."
+Event_item_watch.button1,Kontynuuj
+Event_item_watch_symbol_found.text,Po chwili zdajesz sobię sprawę, że symbol na zegarku jest taki sam jak ten na kartce, którą znalazłeś. To musi coś znaczyć..\n\nKażdy badacz otrzymuje 1 {clue} Wskazówkę
+Event_item_watch_symbol_found.button1,Kontynuuj
+Event_watch_identified.text,"Zegarek kieszonkowy z wygrawerowanymi symbolami, które wcześniej widziałeś, dziwnym stworzeniem i dedykacją: <i>""Dla Evana 1881""</i>. \n\nNie potrafisz otworzyć zegarka."
+Event_watch_identified.button1,{qst:CONTINUE}
+Event_red_element.text,Kawałek papieru wyrwany z jakiejś większej całości. Przedstawia dziwny symbol namalowany czerwoną farbą. Od samego patrzenia robi ci się zimno.
+Event_red_element.button1,{qst:CONTINUE}
+Event_inventory_examine_paper.text,Oglądasz kawałek papieru wyrwany z jakiejś większej całości. Po rozłożeniu widzisz dziwny symbol namalowany czerwoną farbą. Z jakiegoś powodu przechodzi cię dreszcz gdy na niego patrzysz. \n\nOtrzymujesz 1 {clue} Wskazówkę
