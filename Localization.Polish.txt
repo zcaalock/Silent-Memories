@@ -4,12 +4,14 @@ CANCEL,Anuluj
 CONTINUE,Kontynuuj
 EXPLORE,{action} Eksploruj
 INSPECT,{action} Zbadaj
+USE,{action} Użyj
 NEVERMIND,"<i>""Nieważne""</i>"
 OPEN,{action} Otwórz
 PICKUP,{action} Podnieś
 SEARCH,{action} Przeszukaj
 TALK,{action} Porozmawiaj
-quest.name,Silent Memories
+REVEAL, Odkryj
+quest.name,Milczące wspomnienia. Epizod 1
 quest.description,<i>Rozwiąż zagadkę zaginięcia Johna, syna twojej dobrej przyjaciółki i zbadaj tajemnice starego kościoła baptystów z przełomu wieków</i>\n\nScenariusz jest przeznaczony dla 2-5 osób, wymaga kafelków z pierwszej edycji Posiadłości Szaleństwa. W tym scenariuszu w większości przypadków zrezygnowano z opisu tego jak należy ustawiać znaczniki, jest to celowy zabieg zachęcający graczy do uważnego śledzenia zmian w aplikacji jak również element mechaniki. Jeśli jakiś znacznik zostanie zauważony po czasie należy go umieścić na planszy i traktować jako dopiero co odkryty.\n\n<b>Uwaga: jeśli w trakcie rozgrywki pojawi polecenie usunięcia wszystkich kafelek z planszy, Faza Badaczy zaczyna się od nowa.</b>\n\nScenariusz posiada kilka zakończeń.\n\nWszelkie uwagi można kierować pod adresem:\nhttps://github.com/zcaalock/SotC/issues\n\nScenariusz jest stworzony przy użyciu:\nhttps://github.com/NPBruce/valkyrie\n\n\n
 quest.authors,zcaalock\nchrismaliszewski
 quest.synopsys,Rozwiąż zagadkę zaginięcia Johna, syna twojej przyjaciółki.
@@ -49,7 +51,7 @@ Token_church_explore_corridor.text,Duże, ładnie zdobione drzwi.
 Token_church_explore_corridor.button1,{qst:EXPLORE}
 Event_church_spawn_investigators.text,Po szybkim rzucie oka po wnętrzu kościoła zastanawiasz się co dalej. \n\n<i>Umieść badaczy na we wskazanym miejscu.</i>
 Event_church_spawn_investigators.button1,{qst:CONTINUE}
-Event_church_talk_julie.text,<i>Cieszę się, że zdecydowałeś się mi pomóc. Jak zapewne wiesz, mój syn zaginął kilka dni temu. Policja jest bezradna, nie udało im się znaleźć żadnego tropu.\n Dowiedziałam się, że w pobliskim lesie znaleziono ciało jakiegoś chłopca. Na szczęście to nie był mój syn. Policja nie łączy tych dwóch spraw, ale zaczynam mieć bardzo złe przeczucia.\nProszę idź tam. Może znajdziesz jakiś trop. Po drodze przeczytaj raport biegłego. Udało mi się zdobyć kopię od lekarza, który badał zwłoki tego biednego chłopca.\nPowodzenia...</i>\n\nJulie patrzy chwilę na ciebię smuntym badawczym wzrokiem po czym wychodzi.\n\n (Wszyscy Badacze otrzymują 1 {clue})
+Event_church_talk_julie.text,<i>Cieszę się, że zdecydowałeś się mi pomóc. Jak zapewne wiesz, mój syn zaginął kilka dni temu. Policja jest bezradna, nie udało im się znaleźć żadnego tropu.\n Dowiedziałam się, że w pobliskim lesie znaleziono ciało jakiegoś chłopca. Na szczęście to nie był mój syn. Policja nie łączy tych dwóch spraw, ale zaczynam mieć bardzo złe przeczucia.\nProszę idź tam. Może znajdziesz jakiś trop. Po drodze przeczytaj raport biegłego. Udało mi się zdobyć kopię od lekarza, który badał zwłoki tego biednego chłopca.\nPowodzenia...</i>\n\nJulie patrzy chwilę na ciebię smuntym badawczym wzrokiem po czym wychodzi.\n\n (Wszyscy Badacze otrzymują 1 {clue} Wskazówkę)
 Event_church_talk_julie.button1,Kontynuuj
 Event_inventory_coroner_raport.text,Z raportu koronera wynika, że chłopiec zmarł na skutek wykrwaienia z rany na szyi zrobionej ostrym narzędziem. Oprócz tego, na ciele znaleziono siniaki w okolicach nadgarstków i kostek. Czas zgonu to ok 48h od znalezienia ciała. Chłopiec był ubrany w staroświecki strój, który przypomina te z czasów końca XIX wieku. Wiek chłopca to ok. 10 lat. Tożsamość martwego chłopca nie została potwierdzona.
 Event_inventory_coroner_raport.button1,Kontynuuj
@@ -99,8 +101,8 @@ Event_churchCorridor_search_jighsaw_text.button1,{qst:CONTINUE}
 Event_meadow_search_body_text_fail_01.button1,Kontynuuj
 Event_inventory_watch_text_manage.button1,Przycisk1
 Event_inventory_watch_identified_symbols.button1,{qst:CONTINUE}
-Event_meadow_sight_token.text,Po prawej stronie zaczyna się gęsty las. Z tej odległosci widzisz jedynie plątaninę pni, liści i gałęzi.
-Event_meadow_sight_token.button1,Kontynuuj
+Event_meadow_sight_token_spawn.button1,{qst:CONTINUE}
+Event_meadow_explore_spawn_mine.text,Około 10 metrów na północ widzisz zabite deskami wejście do starej kopalni miedzi.
 Event_churchCorridor_test_MYTHOS.button1,{qst:CONTINUE}
 Event_churchCorridor_test_MYTHOS.button2,Nie dotyczy
 Event_churchCorridor_monster_spawn_MYTHOS.text,Światło na korytarzu ciemnieje i przybiera czerwoną poświatę, podłoga zaczyna drżeć, a tynk sypać się z sufitu. Drzwi do kapilicy zamykają się z trzaskiem. Jesteś tu uwięziony. Próbujesz opanować narastającą panikę ale staje się to coraz trudniejsze kiedy zdajesz sobie sprawę z narastającego warczenia dobiegającego z dołu. \n\nUmieść {c:Spawn_churchCorridor_monster}
@@ -109,3 +111,55 @@ Event_churchCorridor_monster_spawn_MYTHOS.button1,{qst:CONTINUE}
 Spawn_churchCorridor_monster.button1,Przycisk1
 Event_churchCorridor_remove_monster_MYTHOS.text,Nagle budzisz się z krzykiem, ze zdziwieniem odkrywając, że leżysz na drewnianej podłodze korytaża przy kaplicy. Wszystko dookoła wygląda normalnie, żadnych śladów potwora. Czy to ci się przyśniło? Przerażony i drżący wstajesz patrząc z nipokojem w kierunku drzwi na dole. Lepiej już stąd pójdę.\n\nOtrzymujesz 1 zakrytą kartę przerażenia. 
 Event_churchCorridor_remove_monster_MYTHOS.button1,Kontynuuj
+Event_meadow_sight_token_spawn.text,Po prawej stronie zaczyna się gęsty las. Z tej odległosci widzisz jedynie plątaninę pni, liści i gałęzi.
+Event_meadow_explore_spawn_mine.button1,Kontynuuj
+Token_meadow_sight.text,Na wschód od tego miejsca rozciąga się las i zbocze góry.
+Token_meadow_sight.button1,Odkryj
+Event_meadowEAST_search_tool_spawn.text,Obok wejścia do kopalni widzisz stare zardzewiałe narzędzia oparte o skalę.\n\n(Umieść: {c:Tile_meadow_east} na planszy.)
+Event_meadowEAST_search_tool_spawn.button1,{qst:CONTINUE}
+Token_meadowEast_search_tools.text,Sterta zardzewiałych narzędzi. Może się coś przyda.
+Token_meadowEast_search_tools.button1,{qst:SEARCH}
+Event_meadowEast_search_text.text,Jedyne nie połamane narzędzie jakie udało ci się znaleźć w tym złomie to kilof. \n\nOtrzymujesz Przedmiot Powszechny {c:QItem_meadowEast_pickaxe}
+Event_meadowEast_search_text.button1,Kontynuuj
+Token_meadowEast_search_foodprint.text,Rozbita lampa naftowa.
+Token_meadowEast_search_foodprint.button1,{qst:SEARCH}
+Event_meadowEast_search_foodprint_text.text,Wygląda na to, że policjanci ominęli to miejsce podczas przeszukiwania okolicy. Widzisz rozbitą lampę naftową. Z całą pewnością leży tu od niedawna bo wciąż czuć naftę. Obok widzisz ślad buda odciśnięty w błocie, jest duży, być może wojskowy lub robitniczy.\n\nOtrzymujesz 1 {clue} Wskazówkę
+Event_meadowEast_search_foodprint_text.button1,Weź jako dowód
+Event_meadowEast_search_foodprint_text.button2,Wyrzuć
+Event_meadowEast_search_foodprint_take_evidence.text,Znajomy opowiadał ci o nowatorskiej metodzie zdejmowania odcisków palców z przedmiotów. Metoda nazywa się Daktyloskopia. Ale wątpisz, żeby ludzie kiedykolwiek zgodzili się na zdejmowanie odcisków palców i ich katalogowanie. \nZ uczuciem bezcelowości zbierasz kawałki szkła do małego pojemnika. \n\nOtrzymujesz przedmiot: {c:QItem_noninventory_fingerprints}
+Event_meadowEast_search_foodprint_take_evidence.button1,Kontynuuj
+Token_meadow_explore_spawn_mine.text,Zabite deskami drzwi do kopalni.
+Token_meadow_explore_spawn_mine.button1,{qst:EXPLORE}
+Event_tunelWest_tile_spawn.text,Choć z zewnątrz tego nie widać deski zostały przez kogoś wyrwane. Bez problemu dostajesz się do środka. Panuje tu całkowita ciemność i widzisz tylko kawałek tunelu ostro biegnącego w dół.\n\n(Umieść: {c:Tile_tunelWest} na planszy.\nUmieść żetony ciemności na planszy.)\n\nMożesz przesunąć się o jedno pole w kierunku eksploracji.
+Event_tunelWest_tile_spawn.button1,Kontynuuj
+Token_tunelWest_sight.text,Tunel biegnie dalej na wschód.
+Token_tunelWest_sight.button1,{qst:REVEAL}
+Token_tunelWest_lamp.text,Przy jednej ze ścian leży lampa naftowa. 
+Token_tunelWest_lamp.button1,{qst:PICKUP}
+Event_tunelWest_take_lamp.text,Choć dawno nie używana wygląda na sprawną, jest w niej jeszcze trochę paliwa.\n\nOtrzymujesz Przedmiot Powszechny {c:QItem_noninventory_lamp}
+Event_tunelWest_take_lamp.button1,Kontynuuj
+Event_tortureRoom_tile_spawn.text,Dostrzegasz słabe migoczące światło kilkanaście metrów niżej. \n\n(Umieść: {c:Tile_tortureRoom} na planszy.)
+Event_tortureRoom_tile_spawn.button1,{qst:CONTINUE}
+Event_tortureRoom_explore_spawn.button1,Kontynuuj
+Token_tortureRoom_explore_doors.text,Drewniane, okute metalowymi pasami drzwi.
+Event_tortureRoom_explore_spawn.text,Tunel zaczyna się wyrównywać, po prawej stronie widzisz okute metalowymi pasami drewniane drzwi.
+Token_tortureRoom_explore_doors.button1,{qst:EXPLORE}
+Event_tortureRoom_colapsed_wall.text,W tym miejscu tunel jest zawalony. Sterta kamieni wypełnia cały korytarz.
+Event_tortureRoom_colapsed_wall.button1,Kontynuuj
+Token_tortureRoom_search_colapsed_wall.text,Zawalony tunel. Jeśli posiadasz kilof możesz spróbować zrobić przejście.
+Token_tortureRoom_search_colapsed_wall.button1,{qst:USE}
+Event_tortureRoom_search_colapsed_menu.text,Rozcierasz ślinę na rękach, bierzesz kilof i robisz zamach. \nWykonaj test {strength}
+Event_tortureRoom_search_colapsed_menu.button1,{qst:CONTINUE}
+Event_tortureRoom_search_colapsed_success.text,Z wielkim wysiłkiem udało ci się zrobić małe przejście na drugą stronę. Przez dziurę widzisz tunel niknący w ciemności.\n\n(Umieść: {c:Tile_tunelMiddle} na planszy)
+Event_tortureRoom_search_colapsed_success.button1,Kontynuuj
+Event_tortureRoom_search_colapsed_menu.button2,Porażka
+Event_tortureRoom_search_colapsed_fail0.text,Mimo usilnych prób, nie udaje ci się zrobić przejścia. Kamienie są duże i zakleszczone ze sobą.
+Event_tortureRoom_search_colapsed_fail0.button1,{qst:CONTINUE}
+Event_tortureRoom_search_colapsed_fail01.text,Uderzasz z całych sił w skałę, a kilof niefortunnie odbija się od dużego kamienia prosto w twoją głowę. \n\n(Otrzymujesz 1 zakrytą kartę Obrażenia ({agility} zapobiega))
+Event_tortureRoom_search_colapsed_fail01.button1,{qst:CONTINUE}
+Event_tortureRoom_search_colapsed_fail02.text,Sfrustrowany ostatkiem sił uderzasz na oślep w kamienie. Cała konstrukcja niespodziewanie się zawala prosto na ciebie.\n\n(Otrzymujesz 2 zakryte karty Obrażeń ({agility} zapobiega). Następnie odkrywasz jedną kartę Obrażeń, kiedy sterta kamieni powala cię na ziemię)
+Event_tortureRoom_search_colapsed_fail02.button1,{qst:CONTINUE}
+Event_tortureRoom_explore_doors_text.text,Wchodzisz do małego, zagraconego pomieszczenia cuchnącego zbutwiałym drewnem i zastanym powietrzem.
+Event_tortureRoom_explore_doors_text.button1,{qst:CONTINUE}
+Event_tortureRoom_explore_symbol_spawn.text,Obok drzwi na brudnej podłodze leży mała karteczka
+Event_tortureRoom_explore_symbol_spawn.button1,{qst:CONTINUE}

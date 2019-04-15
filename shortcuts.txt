@@ -1,0 +1,20 @@
+ATTACK,Atak
+CANCEL,Anuluj
+CONTINUE,Kontynuuj
+EXPLORE,{action} Eksploruj
+INSPECT,{action} Zbadaj
+USE,{action} U¿yj
+NEVERMIND,"<i>""Niewa¿ne""</i>"
+OPEN,{action} Otwórz
+PICKUP,{action} Podnieœ
+SEARCH,{action} Przeszukaj
+TALK,{action} Porozmawiaj
+REVEAL, Odkryj
+
+{qst:SEARCH}
+{qst:CONTINUE}
+{qst:EXPLORE}
+{qst:PICKUP}
+{qst:CANCEL}
+{qst:REVEAL}
+{qst:USE}
