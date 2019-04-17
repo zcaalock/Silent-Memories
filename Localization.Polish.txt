@@ -12,10 +12,10 @@ SEARCH,{action} Przeszukaj
 TALK,{action} Porozmawiaj
 REVEAL, Odkryj
 quest.name,Milczące wspomnienia. Epizod 1
-quest.description,<i>Rozwiąż zagadkę zaginięcia Johna, syna twojej dobrej przyjaciółki i zbadaj tajemnice starego kościoła baptystów z przełomu wieków</i>\n\nScenariusz jest przeznaczony dla 2-5 osób, wymaga kafelków z pierwszej edycji Posiadłości Szaleństwa. W tym scenariuszu w większości przypadków zrezygnowano z opisu tego jak należy ustawiać znaczniki, jest to celowy zabieg zachęcający graczy do uważnego śledzenia zmian w aplikacji jak również element mechaniki. Jeśli jakiś znacznik zostanie zauważony po czasie należy go umieścić na planszy i traktować jako dopiero co odkryty.\n\n<b>Uwaga: jeśli w trakcie rozgrywki pojawi polecenie usunięcia wszystkich kafelek z planszy, Faza Badaczy zaczyna się od nowa.</b>\n\nScenariusz posiada kilka zakończeń.\n\nWszelkie uwagi można kierować pod adresem:\nhttps://github.com/zcaalock/SotC/issues\n\nScenariusz jest stworzony przy użyciu:\nhttps://github.com/NPBruce/valkyrie\n\n\n
+quest.description,<i>Rozwiąż zagadkę zaginięcia Johna, syna twojej dobrej przyjaciółki i zbadaj tajemnice starego kościoła baptystów z przełomu wieków</i>\n\nScenariusz jest przeznaczony dla 2-5 osób, wymaga kafelków z pierwszej edycji Posiadłości Szaleństwa. W tym scenariuszu w większości przypadków zrezygnowano z opisu tego jak należy ustawiać znaczniki, jest to celowy zabieg zachęcający graczy do uważnego śledzenia zmian w aplikacji jak również element mechaniki. Jeśli jakiś znacznik zostanie zauważony po czasie należy go umieścić na planszy i traktować jako dopiero co odkryty.\n\n<b>Uwaga: jeśli w trakcie rozgrywki pojawi polecenie usunięcia wszystkich kafelek z planszy, Faza Badaczy zaczyna się od nowa.</b>\n\nWszelkie uwagi można kierować pod adresem:\nhttps://github.com/zcaalock/Silent-Memories/issues\n\nScenariusz jest stworzony przy użyciu:\nhttps://github.com/NPBruce/valkyrie\n\n\n
 quest.authors,zcaalock\nchrismaliszewski
-quest.synopsys,Rozwiąż zagadkę zaginięcia Johna, syna twojej przyjaciółki.
-UI_inventory_jigsaw_red.button1,Przycisk1
+quest.synopsys,Rozwiąż zagadkę zaginięcia Johna, syna przyjaciółki.
+Event_tortureRoom_search_bookself_fail_00.button1,{qst:CONTINUE}
 UI_start_continue.button1,Przycisk1
 Event_start_game_no_clue.button1,{qst:CONTINUE}
 Token_churchCorridor_search_jighsaw.text,Hm.. coś leży na podłodze, musiałeś to przeoczyć kiedy tędy przechodziłeś.
@@ -29,18 +29,18 @@ Event_church_person_julie.text,W pierwszej ławce siedzi twoja przyjaciółka. W
 Event_church_spawn_search_info_label.button1,{qst:CONTINUE}
 Token_church_search_info_label.text,Miedziana tabliczka na ołtarzu.
 Token_church_search_info_label.button1,{qst:SEARCH}
-Event_church_search_text_info_label.text,Ku pamięci ofiar pożaru, który tu wybuchł w 12 grudnia 1901r. \n\n (Otrzymujesz 1 {clue} Wskazówkę)
+Event_church_search_text_info_label.text,Ku pamięci ofiar pożaru, który tu wybuchł 12 grudnia 1901r. \n\n (Otrzymujesz 1 {clue} Wskazówkę)
 Event_church_search_text_info_label.button1,Kontynuuj
 Event_church_spawn_bookshelf.text,Z tyłu kościoła jest stara, ładnie zdobiona, drewniana półka z zakurzonymi książkami.
 Event_church_spawn_bookshelf.button1,{qst:CONTINUE}
 Token_church_search_bookshelf.text,Półka ze starymi zakurzonymi książkami.
 Token_church_search_bookshelf.button1,{qst:SEARCH}
-Event_church_search_text_bookshelf.text,Jesteś lekko zdziwiony, że to nie egzemplarze Biblii lub innych religijnych książek. Przebiegasz wzrokiem po grzbietach i widzisz, że każda księga jest podpisana: Dziennik prac. Kopalnia miedzi. Daty są od 1800 do 1900 roku. Brakuje dziennika z 1850-1855. W środku są tabele z nazwiskami, datami i ilością wydobytego urobku.\n\n(Otrzymujesz 1 {clue})
+Event_church_search_text_bookshelf.text,Jesteś lekko zdziwiony, że to nie egzemplarze Biblii lub innych religijnych książek. Przebiegasz wzrokiem po grzbietach książek i widzisz, że każda z nich jest podpisana: Dziennik prac. Kopalnia miedzi. Daty są od 1800 do 1900 roku. Brakuje dziennika z 1850-1855. W środku są tabele z nazwiskami, datami i ilością wydobytego urobku.\n\n(Otrzymujesz 1 {clue} wskazówkę)
 Event_church_search_text_bookshelf.button1,Kontynuuj
 Token_church_bookshelf_interaction.text,Postanawiasz jeszcze raz rzucić okiem na póki. Masz przeczucie, że coś z nimi jest nie tak...
 Token_church_bookshelf_interaction.button1,{qst:SEARCH}
-Event_church_bookshelf_interaction_test.text,Wyciągasz książki na chybił trafił mając nadzieję, że znajdziesz coś interesującego. \n\nTest wiedzy {lore}.
-Event_church_bookshelf_interaction_test.button1,Sukces
+Event_church_bookshelf_interaction_test.text,Wyciągasz książki na chybił trafił mając nadzieję, że znajdziesz coś interesującego. \n\nTest wiedzy {observation}.
+Event_church_bookshelf_interaction_test.button1,{qst:CONTINUE}
 Event_church_bookshelf_interaction_test.button2,Porażka
 Event_church_bookshelf_interaction_test.button3,{qst:CANCEL}
 Event_church_bookshelf_interaction_success.text,Próbujesz wyciągnąć kolejną książkę, pociągasz ją w dół, słyszysz ciche kliknięcie i czujesz, że półka lekko się poruszyła. Po dokładniejszym zbadaniu dostrzegasz prowadnice na podłodze, które umożliwiają łatwe przesunięcie półki na bok. Ze zdziwieniem obserwujesz, jak półka się przesuwa, a twoim oczom ukazują się ładnie zdobione drzwi z miedzianymi okuciami.
@@ -63,9 +63,9 @@ Event_churchCorridor_search_door_text.button1,Kontynuuj
 Token_churchCorridor_search_jighsaw.button1,{qst:PICKUP}
 Event_churchCorridor_search_door_text.text,Drzwi drewniane, solidnie zrobione, spięte grubymi metalowymi pasami. Zamek w drzwiach jest duży i staroświecki.\nNaciskasz na klamkę, ale drzwi są zamknięte. Próbujesz zobaczyć coś przez dziurę od klucza, ale jest tam tylko ciemność, zapach stęchlizny i zbutwiałego drewna.\n\n(Otrzymujesz 1 Wskazówkę {clue})
 Token_church_person_julie_mayer.text,Twoja znajoma. Julie Mayer. Szepta cichą modlitwę mając zamknięte oczy.
-Event_churchCorridor_search_jighsaw_text.text,Podnosisz kawałek kartki wyrwany z większej całości. Jest złożona kilka razy, papier wydaje się stary. Chwilę bijesz się z myślami i w końcu wkładasz kartkę do kieszeni.
+Event_churchCorridor_search_sybmol_O_text.button1,{qst:CONTINUE}
 Event_inventory_watch_symbol_found.text,Po chwili zdajesz sobię sprawę, że symbol na zegarku jest taki sam jak ten na kartce, którą znalazłeś. To musi coś znaczyć..\n\nKażdy badacz otrzymuje 1 {clue} Wskazówkę
-Event_inventory_red_element_examine_paper.text,Oglądasz kawałek papieru wyrwany z jakiejś większej całości. Po rozłożeniu widzisz dziwny symbol namalowany czerwoną farbą. Z jakiegoś powodu przechodzi cię dreszcz gdy na niego patrzysz. \n\nOtrzymujesz 1 {clue} Wskazówkę
+Event_inventory_symbol_O_examine.button1,Kontynuuj
 Event_meadow_search_body_text_fail_00.text,Po dłuższej chwili jedyne na co udało ci się trafić to kawałek rozbitego szkła. Wygrzebujesz się spod krzaka cicho przeklinając.\n\nOtrzymujesz jedną zakytą kartę obrażeń.
 Event_church_bookshelf_interaction_fail.button1,{qst:CONTINUE}
 Token_church_door_out.text,Wyjście.
@@ -90,14 +90,14 @@ Event_meadow_search_body_text_success.button1,Kontynuuj
 Event_inventory_watch_text_00.text,"To bardzo starannie zrobiony zegarek. Błyszczący metal jest dokładnie wypolerowany. Z przodu wygrawerowane jest dziwne stworzenie, wygląda jak ośmiornica. Z tyłu znajduje się grawer z napisem: <i>""dla Evana 1881""</i>. \nCałkiem nieźle się trzyma jak na 40 letni zegarek! \nNa kopercie jest zamontowany ruchomy bezel, który pokryty jest dziwnymi symbolami. Niestety w żaden sposób nie udaje ci się otworzyć zegarka."
 Event_inventory_watch_text_00.button1,Kontynuuj
 Event_inventory_watch_symbol_found.button1,Kontynuuj
-Event_inventory_red_element_examine_paper.button1,Kontynuuj
+Event_inventory_old_jurnal.text,"Stary dziennik pokryty skórą i dziwnymmi symbolami.\nNa okładce odczytujesz napis ""Call of Cthulhu"""
 Event_inventory_watch_identified_symbols.text,"Zegarek kieszonkowy z wygrawerowanymi symbolami, które wcześniej widziałeś, dziwnym stworzeniem i dedykacją: <i>""Dla Evana 1881""</i>. \n\nNie potrafisz otworzyć zegarka."
 Event_church_clear_board.button1,{qst:CONTINUE}
-Event_inventory_red_element_text.button1,{qst:CONTINUE}
-Event_inventory_red_element_text.text,Kawałek papieru wyrwany z jakiejś większej całości. Przedstawia dziwny symbol namalowany czerwoną farbą. Od samego patrzenia robi ci się zimno.
+Event_inventory_symbol_O_text.text,Kawałek papieru wyrwany z jakiejś większej całości. Przedstawia dziwny symbol namalowany czerwoną farbą. Od samego patrzenia robi ci się zimno.
+UI_inventory_symbol_O.button1,Przycisk1
 Event_meadow_search_body_text_fail_00.button1,Kontynuuj
 Event_meadow_search_body_text_fail_01.text,Chyba robisz się za stary do tej roboty, lawirując pomiędzy gałęziami potykasz się o własne nogi i dajesz nura prosto w coś co było kiedyś dzikiem a teraz jest śmierdzącym truchłem. Nic ci się nie stało ale twoja duma nieco ucierpiała kiedy zobaczyleś skonsternowane miny towarzysz. \nPo kilku dłuższych chwilach poszukiwań rzuca ci się w oczy mieniący się kształt. Rozchylasz gałęzie niedaleko miejsca gdzie zacząłeś poszukiwania i znajdujesz złoty przedmiot.\n\nOtrzymujesz 1 {clue} Wskazówkę.
-Event_churchCorridor_search_jighsaw_text.button1,{qst:CONTINUE}
+Token_tortureRoom_search_symbol_E.text,Pomiędzy starymi zniszczonymi meblami widzisz małą, pomiętą karteczkę.
 Event_meadow_search_body_text_fail_01.button1,Kontynuuj
 Event_inventory_watch_text_manage.button1,Przycisk1
 Event_inventory_watch_identified_symbols.button1,{qst:CONTINUE}
@@ -105,11 +105,11 @@ Event_meadow_sight_token_spawn.button1,{qst:CONTINUE}
 Event_meadow_explore_spawn_mine.text,Około 10 metrów na północ widzisz zabite deskami wejście do starej kopalni miedzi.
 Event_churchCorridor_test_MYTHOS.button1,{qst:CONTINUE}
 Event_churchCorridor_test_MYTHOS.button2,Nie dotyczy
-Event_churchCorridor_monster_spawn_MYTHOS.text,Światło na korytarzu ciemnieje i przybiera czerwoną poświatę, podłoga zaczyna drżeć, a tynk sypać się z sufitu. Drzwi do kapilicy zamykają się z trzaskiem. Jesteś tu uwięziony. Próbujesz opanować narastającą panikę ale staje się to coraz trudniejsze kiedy zdajesz sobie sprawę z narastającego warczenia dobiegającego z dołu. \n\nUmieść {c:Spawn_churchCorridor_monster}
+Event_churchCorridor_monster_spawn_MYTHOS.text,Światło na korytarzu ciemnieje i przybiera czerwoną poświatę, podłoga zaczyna drżeć, a tynk sypać się z sufitu. Drzwi do kapilicy zamykają się z trzaskiem. Jesteś tu uwięziony. Próbujesz opanować narastającą panikę ale staje się to coraz trudniejsze kiedy zdajesz sobie sprawę z narastającego warczenia dobiegającego z dołu. \n\nUmieść Istotę z Głębin na planszy.
 Event_churchCorridor_test_MYTHOS.text,Wydarze dotyczy badaczy znajdujących się w {c:Tile_02_churchCorridor}
 Event_churchCorridor_monster_spawn_MYTHOS.button1,{qst:CONTINUE}
 Spawn_churchCorridor_monster.button1,Przycisk1
-Event_churchCorridor_remove_monster_MYTHOS.text,Nagle budzisz się z krzykiem, ze zdziwieniem odkrywając, że leżysz na drewnianej podłodze korytaża przy kaplicy. Wszystko dookoła wygląda normalnie, żadnych śladów potwora. Czy to ci się przyśniło? Przerażony i drżący wstajesz patrząc z nipokojem w kierunku drzwi na dole. Lepiej już stąd pójdę.\n\nOtrzymujesz 1 zakrytą kartę przerażenia. 
+Event_churchCorridor_remove_monster_MYTHOS.text,Nagle budzisz się z krzykiem, ze zdziwieniem odkrywając, że leżysz na drewnianej podłodze korytaża przy kaplicy. Wszystko dookoła wygląda normalnie, żadnych śladów potwora. Czy to ci się przyśniło? Przerażony i drżący wstajesz patrząc z niepokojem w kierunku drzwi na dole. Chyba lepiej będzie jak opuścimy to miejsce.\n\n(Otrzymujesz 1 zakrytą kartę przerażenia.) 
 Event_churchCorridor_remove_monster_MYTHOS.button1,Kontynuuj
 Event_meadow_sight_token_spawn.text,Po prawej stronie zaczyna się gęsty las. Z tej odległosci widzisz jedynie plątaninę pni, liści i gałęzi.
 Event_meadow_explore_spawn_mine.button1,Kontynuuj
@@ -130,7 +130,7 @@ Event_meadowEast_search_foodprint_take_evidence.text,Znajomy opowiadał ci o now
 Event_meadowEast_search_foodprint_take_evidence.button1,Kontynuuj
 Token_meadow_explore_spawn_mine.text,Zabite deskami drzwi do kopalni.
 Token_meadow_explore_spawn_mine.button1,{qst:EXPLORE}
-Event_tunelWest_tile_spawn.text,Choć z zewnątrz tego nie widać deski zostały przez kogoś wyrwane. Bez problemu dostajesz się do środka. Panuje tu całkowita ciemność i widzisz tylko kawałek tunelu ostro biegnącego w dół.\n\n(Umieść: {c:Tile_tunelWest} na planszy.\nUmieść żetony ciemności na planszy.)\n\nMożesz przesunąć się o jedno pole w kierunku eksploracji.
+Event_tunelWest_tile_spawn.text,Choć z zewnątrz tego nie widać deski zostały przez kogoś wyrwane. Bez problemu dostajesz się do środka. Panuje tu całkowita ciemność i widzisz tylko kawałek tunelu ostro biegnącego w dół.\n\n(Umieść: {c:Tile_tunelWest} na planszy.\nUmieść żetony ciemności na planszy.)
 Event_tunelWest_tile_spawn.button1,Kontynuuj
 Token_tunelWest_sight.text,Tunel biegnie dalej na wschód.
 Token_tunelWest_sight.button1,{qst:REVEAL}
@@ -159,7 +159,47 @@ Event_tortureRoom_search_colapsed_fail01.text,Uderzasz z całych sił w skałę,
 Event_tortureRoom_search_colapsed_fail01.button1,{qst:CONTINUE}
 Event_tortureRoom_search_colapsed_fail02.text,Sfrustrowany ostatkiem sił uderzasz na oślep w kamienie. Cała konstrukcja niespodziewanie się zawala prosto na ciebie.\n\n(Otrzymujesz 2 zakryte karty Obrażeń ({agility} zapobiega). Następnie odkrywasz jedną kartę Obrażeń, kiedy sterta kamieni powala cię na ziemię)
 Event_tortureRoom_search_colapsed_fail02.button1,{qst:CONTINUE}
-Event_tortureRoom_explore_doors_text.text,Wchodzisz do małego, zagraconego pomieszczenia cuchnącego zbutwiałym drewnem i zastanym powietrzem.
+Event_tortureRoom_explore_doors_text.text,Wchodzisz do małego, zagraconego pomieszczenia cuchnącego zbutwiałym drewnem i zastanym powietrzem. Na końcu pokoju mieści się mały składzić kiedyś zamykany kratą, która teraz leży oparta o ścianę i rdzewieje.
 Event_tortureRoom_explore_doors_text.button1,{qst:CONTINUE}
-Event_tortureRoom_explore_symbol_spawn.text,Obok drzwi na brudnej podłodze leży mała karteczka
-Event_tortureRoom_explore_symbol_spawn.button1,{qst:CONTINUE}
+Event_tortureRoom_search_symbol_E_spawn.text,Po przeciwległej stronie na brudnej podłodze leży mała karteczka.
+Event_tortureRoom_search_sybmol_E_text.text,Podnosisz kawałek kartki wyrwany być może z dziennika. Jest złożona kilka razy, papier wydaje się stary. Chwilę bijesz się z myślami i w końcu wkładasz kartkę do kieszeni.\n\nOtrzymujesz: {c:QItem_tortureRoom_symbol_E}\n(Możesz go zobaczyć w menu inwentarza)
+Event_tortureRoom_search_bookshelf.text,W rogu pokoju widzisz regał z ksiązkami, cały jest w kurzu i pajęczynach.
+Event__move_to_explo.text,Możesz się przesunąć o jedno pole w kierunku eksploracji.
+Token_tortureRoom_search_bookshelf.button1,{qst:CONTINUE}
+Token_tortureRoom_search_bookshelf.button2,Przycisk2
+Event_inventory_symbol_O_examine.text,Oglądasz kawałek papieru wyrwany z jakiejś większej całości. Po rozłożeniu widzisz dziwny symbol namalowany czerwoną farbą. Z jakiegoś powodu przechodzi cię dreszcz gdy na niego patrzysz. \n\nOtrzymujesz 1 {clue} Wskazówkę
+Event_tortureRoom_search_bookself_success.button1,Kontynuuj
+Event_tortureRoom_search_bookshelf.button1,{qst:CONTINUE}
+Event_inventory_old_jurnal.button1,{action} Czytaj
+Event_inventory_old_jurnal.button2,Schowaj
+Event_inventory_old_jurnal_first_look.button1,{qst:CONTINUE}
+Event_inventory_old_jurnal_first_page_red.button1,Kontynuuj
+Event_inventory_old_jurnal_Oxxx.button1,Kontynuuj
+Event_inventory_jurnal_first_page.button1,Kontynuuj
+Event_inventory_old_jurnal_xxEx.text,Ze zdziwieniem odkrywasz, że na stronie w dzienniku jeden z symboli zamienił się w literę E. \n\nMusisz, znaleźć kolejne symbole.
+TokenDEBUG.button1,Przycisk1
+Event_inventory_old_jurnal_first_page_red.text,Dziennik jest zapisany dziwnymi symbolami. tylko jedną stronę da się przeczytać.
+Event_inventory_old_jurnal_OxEx.button1,Kontynuuj
+Event_inventory_old_jurnal_first_look.text,Dziennik jest pokryty skórą i dziwnymi symbolami. Gdy przesuwasz po nim palcem czujesz mrowienie,  powietrze w okół staje się jakby naelektryzowane. \n\nJuż raz doświadczyłeś takiego uczucia kiedy miałeś nieszczęście uczestniczyć jako świadek w straceniu przestępcy na krześle elektrycznym. Zasłużona kara ale widok paskudny. \n\nWygląda na to, że ktoś ukrył ten dziennik dawno temu. Chociaż... co dziwne, metalowe klamry i pasy którymi dziennik jest spięty jak i sam dziennik wydają jak nowe. Pomijając kurz nie widzisz żadnych śladów rdzy czy zgnilizny.
+Event_inventory_jurnal_first_page.text,"Ktoś powyrywał większość stron z dziennika. Te które pozostały są pokryte dziwnymi symbolami. Po przewertowaniu kilku kartek trafiasz na wpis w  zrozumiałym języku:\n\n<i>""Panie wybacz mi bo bardzo zgrzeszyłem nieudolością i zaniechaniem. \n\nOstatnia próba pozyskania obiektu sie nie udała, Twój wierny sluga zawiódl. \nAle po stokroć będę próbować Cie zadowolić, tak jak ty po stokroc karzesz tych, ktorzy sprzeciwiają się Twojej Woli.\n\nWielki dzień Twojej Sprawiedliwości nadchodzi, a ja wykonam plan. \nDzisiejszej nocy wszystko się dokona.""</i>\n\n(Otrzymujesz 1 {clue} wskazówkę. Po jednej wskazówce otrzymują także badacze znajdujący się na w zasięgu wzroku (2 pola))"
+Event_inventory_symbol_O_text.button1,{qst:CONTINUE}
+Event_tortureRoom_search_bookself_fail_01.button1,{qst:CONTINUE}
+Event_tortureRoom_search_bookself_fail_01.text,Tak szybko jak się pojawiły nagle wszystkie pająki znikają, a ty dochodzisz do wniosku. że to była halucynacja. Masz nadzieję, że żaden z twoich towarzyszy tego nie widział.\n\nWstając z brudnej i zakurzonej ziemi zauważasz coś ciekawego na półce.\n\nOtrzymujesz {c:QItem_torture_room_old_jurnal}. \n(Możesz się mu dokładniej przyjżeć klikając w inwentarz)
+Event_tortureRoom_search_bookself_success.text,Rozsuwasz zasłonę z pajęczyn przez chwilę wodząc wzrokiem za pająkami uciekającymi w popłochu. \n\nW po krótkiej chwili twój wyczulony na dowody zmysł wzroku szybko odnajduje coś interesującego.\n\nOtrzymujesz {c:QItem_torture_room_old_jurnal}. \n(Możesz się mu dokładniej przyjżeć klikając w inwentarz)
+Event__move_to_explo.button1,{qst:CONTINUE}
+Token_tortureRoom_search_symbol_E.button1,{qst:INSPECT}
+Token_tortureRoom_search_bookshelf.text,Stara półka z książkami. Wszystko jest pokryte grubą warstwą kurzu i pajęczyn. Możesz spróbować znaleźć tu coś ciekawego wykonując test {lore}.
+Event_churchCorridor_search_sybmol_O_text.text,Podnosisz kawałek kartki wyrwany z większej całości. Jest złożona kilka razy, papier wydaje się stary. Chwilę bijesz się z myślami i w końcu wkładasz kartkę do kieszeni.
+Event_tortureRoom_search_sybmol_E_text.button1,Kontynuuj
+Event_tortureRoom_test_MYTHOS.text,Wydarze dotyczy badaczy znajdujących się w {c:Tile_tortureRoom}
+Event_tortureRoom_test_MYTHOS.button1,Kontynuuj
+Event_tortureRoom_test_MYTHOS.button2,Nie dotyczy
+Event_tortureRoom_monster_spawn_MYTHOS.text,Niebieska poświata rozchodzi się po całym pomieszczeniu. Przeradza się w nagły blask i gaśnie. Z przerażeniem i lekkim zdumieniem zdajesz sobię sprawę, że zakapturzona istota pojawiła się w małym pomieszczeniu na końcu pokoju. Niestety krata, która kiedyś służyła do zamykania tej części magazynu teraz leży zardzewiała na ziemi. \n\nUmieść kultystę na planszy.
+Event_tortureRoom_monster_spawn_MYTHOS.button1,{qst:CONTINUE}
+Event_inventory_symbol_E_examine.button1,{qst:CONTINUE}
+Event_inventory_symbol_E_examine.text,Dziwny symbol na zmiętej kartce papieru, wygląda jak wyrwany z dziennika.
+Event_inventory_old_jurnal_xxEx.button1,Kontynuuj
+Event_tortureRoom_search_bookself_fail_00.text,Rozsuwasz zasłonę z pajęczyn przez chwilę wodząc wzrokiem za pająkami uciekającymi w popłochu. \n\nW po krótkiej chwili zdajesz sobię sprawę, że setki pająków wspinają się po twoim ubraniu aby dostać się do twojego gardła. Zaczynasz szamotać się próbując pozbyć się robactwa..\n\n(Otrzymujesz jedną zakrytą kartę przerażenia)
+Event_inventory_old_jurnal_OxEx.text,Na stronie w dzienniku dwa z symboli zamieniły się w litery O i E. \n\nMusisz, znaleźć kolejne dwa symbole.
+Event_inventory_old_jurnal_Oxxx.text,Ze zdziwieniem odkrywasz, że na stronie w dzienniku jeden z symboli zamienił się w literę O. \n\nMusisz, znaleźć kolejne symbole.
+Event_tortureRoom_search_symbol_E_spawn.button1,{qst:CONTINUE}
