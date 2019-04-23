@@ -203,3 +203,34 @@ Event_tortureRoom_search_bookself_fail_00.text,Rozsuwasz zasłonę z pajęczyn p
 Event_inventory_old_jurnal_OxEx.text,Na stronie w dzienniku dwa z symboli zamieniły się w litery O i E. \n\nMusisz, znaleźć kolejne dwa symbole.
 Event_inventory_old_jurnal_Oxxx.text,Ze zdziwieniem odkrywasz, że na stronie w dzienniku jeden z symboli zamienił się w literę O. \n\nMusisz, znaleźć kolejne symbole.
 Event_tortureRoom_search_symbol_E_spawn.button1,{qst:CONTINUE}
+Event_tunelMiddle_spawn_search_john_room.button1,{qst:CONTINUE}
+Event_tunelMiddle_spawn_sight_colapsedRoom.text,Po lewej widzisz dziurę, która prowadzi do kolejnego pomieszczenia.
+Token_tunelMiddle_search_john_room.text,Metalowe nitowane drzwi z klapką na wysokości oczu i drugą klapką przy ziemi.
+Token_tunelMiddle_search_john_room.button1,{qst:INSPECT}
+Event_tunelMiddle_search_john_room.text,Drzwi są masywne, zrobione z kutej stali, wzmocnione nitami. Na wysokości oczu widzisz klapkę, którą zapewne kiedyś dało się odsunąć. Jest zardzewiała, nie da się jej ruszyć. Poniżej jest klamka i dziura na duży klucz, prawdopodobnie mosiężny, sądząc po wykończeniu zamka. U podstawy drzwi jest odsunięta klapka, zaglądasz przez nią, jednak w środku jest zbyt ciemno byś mógł cokolwiek zobaczyć. Całośc przypomina ci drzwi od celi.\n\n(Otrzymujesz 1 {clue} wskazówkę}
+Event_tunelMiddle_search_john_room.button1,Kontynuuj
+Token_tunelMiddle_explore_john_room.text,Zamknięte metalowe drzwi.
+Token_tunelMiddle_explore_john_room.button1,Kontynuuj
+Event_tunelMiddle_spawn_search_john_room.text,Niedaleko przejścia po prawej stronie widzisz metalowe nitowane drzwi.
+Event_tunelMiddle_spawn_sight_colapsedRoom.button1,{qst:CONTINUE}
+Token_tunelMiddle_sight_colapsedRoom.text,Dziura, która wygląda jak po eksplozji, to tu było centrum wybuchu który zawalił tunel. 
+Token_tunelMiddle_sight_colapsedRoom.button1,{qst:REVEAL}
+Event_colapsedRoom_spawn_tile.text,Wybuch, który spowodował zawalenie tuneli otworzył przejście do pomieszczenia obok.\n\nUmieść {c:Tile_colapsedRoom} na planszy
+Event_colapsedRoom_spawn_tile.button1,Kontynuuj
+Event_tunelMiddle_spawn_sight_tunelEast.text,Tunel biegnie w dół, w kierunku wschodnim.
+Event_tunelMiddle_spawn_sight_tunelEast.button1,{qst:CONTINUE}
+Token_tunelMiddle_sight_tunelEast.button1,{qst:REVEAL}
+Event_tunelEast_spawn_tile.text,Tunel kończy się w tym miejscu.\n\nUmieść {c:Tile_tunnelEast} na planszy.
+Event_tunelMiddle_spawn_search_lamp.text,Na ścianie widzisz lampę oliwną.
+Event_tunelMiddle_spawn_search_lamp.button1,{qst:CONTINUE}
+Token_tunelMiddle_search_lamp.text,Lampa oliwna, może uda Ci się ją zapalić i rozświetlić te egipskie ciemności.\n\nWykonaj test obserwacji {observation}
+Token_tunelMiddle_search_lamp.button1,{qst:USE}
+Event_tunelMiddle_darkness.text,W pomieszczeniu panuje ciemność.
+Event_tunelMiddle_darkness.button1,Kontynuuj
+Token_tunelMiddle_search_lamp.button2,Przycisk2
+Event_tunelMiddle_search_lamp_success.text,Udało ci się odnaleźć małe pokrętło z krzesiwem. Kilka ruchów raz w jedną, raz w drugą stronę wystarczyło aby rozpalić ognień.\n\nUsuń, żetony ciemności z tego pomieszczenia.
+Event_tunelMiddle_search_lamp_success.button1,{qst:CONTINUE}
+Event_tunelMiddle_search_lamp_fail.text,Macasz lampę ze wszystkich stron szukając pokrętła z krzesiwem. Udało ci się znaleźć wystający ostro zakończony kawałek zardzewiałego metalu, na którym przeciąłeś sobie palec.\n\nOtrzymujesz 1 zakrytą kartę obrażeń.
+Event_tunelMiddle_search_lamp_fail.button1,{qst:CONTINUE}
+Token_tunelMiddle_sight_tunelEast.text,Tunel opada w kiedunku wschodnim.
+Event_tunelEast_spawn_tile.button1,{qst:CONTINUE}

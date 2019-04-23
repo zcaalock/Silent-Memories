@@ -19,3 +19,4 @@ REVEAL, Odkryj
 {qst:REVEAL}
 {qst:USE}
 {qst:INSPECT}
+{qst:USE}
